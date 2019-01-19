@@ -1,13 +1,13 @@
 ﻿using System;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using example_sharp;
 
 namespace example_sharp_tests
 {
-    [TestFixture]
+    [TestClass]
     public class Example_tests
     {
-        [Test]
+        [TestMethod]
         public void Test_calculate_sum_multiplied()
         {
             Example_class example = new Example_class();
@@ -21,7 +21,7 @@ namespace example_sharp_tests
                 example.Calculate_sum_multiplied(2, 3, 5));
         }
 
-        [Test]
+        [TestMethod]
         public void Test_longest_string()
         {
             Example_class example = new Example_class();
