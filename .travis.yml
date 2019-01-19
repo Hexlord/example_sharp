@@ -1,3 +1,5 @@
+sudo: required
+dist: trusty
 solution: example_sharp.sln
 install:
   - nuget restore example_sharp.sln
