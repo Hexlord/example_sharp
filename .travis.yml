@@ -1,13 +1,3 @@
-language: csharp
-mono: none
-dotnet: 4.6.1
-solution: example_sharp.sln
-script:
-  - dotnet restore
-  - dotnet build example_sharp.sln -c Release
-  - dotnet test -c Release --no-build example_sharp_tests/example_sharp_tests.csproj
-
-  language: csharp
 solution: example_sharp.sln
 install:
   - nuget restore example_sharp.sln
