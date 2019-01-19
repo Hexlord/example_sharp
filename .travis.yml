@@ -1,11 +1,7 @@
 language: csharp
+mono: none
+dotnet: 2.1.502
 solution: example_sharp.sln
-mono:
-  - latest
-install:
-  - nuget restore example_sharp.sln
-  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - msbuild /p:Configuration=Release example_sharp.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./example_sharp_tests/bin/Release/example_sharp_tests.dll
-
+  - dotnet restore
+  - dotnet test
