@@ -3,5 +3,5 @@ mono: none
 dotnet: 2.1.502
 solution: example_sharp.sln
 script:
-  - dotnet restore
-  - dotnet test
+  - dotnet build example_sharp.sln -c Release
+  - dotnet test -c Release --no-build example_sharp_tests/example_sharp_tests.csproj
