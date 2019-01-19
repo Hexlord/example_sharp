@@ -5,9 +5,7 @@ mono:
 install:
   - nuget restore example_sharp.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
-  script:
+script:
   - msbuild /p:Configuration=Release example_sharp.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe 
-  ./example_sharp.Tests/bin/Release/example_sharp.Tests.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./example_sharp_tests/bin/Release/example_sharp_tests.dll
 
-  
