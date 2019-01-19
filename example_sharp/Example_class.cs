@@ -14,7 +14,7 @@ namespace example_sharp
 
         public int Calculate_sum_multiplied(int a, int b, int mul)
         {
-            return (a + b) * mul;
+            return a + b * mul;
         }
 
         public string Longest_string(string s1, string s2)
