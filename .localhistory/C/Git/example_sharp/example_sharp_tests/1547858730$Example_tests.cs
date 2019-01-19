@@ -30,7 +30,7 @@ namespace example_sharp_tests
             Assert.AreEqual("BBB",
                 example.Longest_string("AA", "BBB"));
 
-            // make sure that even-case result is the first argument
+            // make sure that even-case result is the first arg
             Assert.AreEqual("Hey",
                 example.Longest_string("Hey", "Bro"));
         }
