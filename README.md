@@ -1,3 +1,3 @@
-# Тестирование MsBuild-проектов в Travis CI
+# MsBuild-project testing via Travis CI
 
-![Статус проекта на travis](https://travis-ci.com/Hexlord/example_sharp.svg?branch=master)
+![Project status on travis](https://travis-ci.com/Hexlord/example_sharp.svg?branch=master)
